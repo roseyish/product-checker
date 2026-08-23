@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ingredient Truth Checker",
+  "version": "1.0",
+  "description": "Analyzes product ingredients against marketing claims using AI.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:5000/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ingredient Truth Checker"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
