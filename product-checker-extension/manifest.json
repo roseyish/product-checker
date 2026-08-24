@@ -1,18 +1,24 @@
 {
   "manifest_version": 3,
   "name": "Ingredient Truth Checker",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Analyzes product ingredients against marketing claims using AI.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "storage", "sidePanel", "tabs"],
   "host_permissions": ["http://127.0.0.1:5000/*"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "Ingredient Truth Checker"
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
-  ]
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Ingredient Truth Checker"
+  }
 }
