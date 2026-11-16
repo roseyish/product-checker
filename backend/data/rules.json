@@ -1,0 +1,77 @@
+{
+  "_readme": "Claim detection and verdict rules. Phrases are regular expressions matched against the product title and description (lowercased). domain limits a benefit to skin or hair products.",
+
+  "benefits": {
+    "brightening": {"label": "Brightens, evens tone", "domain": "skin", "phrases": ["brighten", "radian", "glow", "even(s|ing)? (out )?(the )?(skin ?)?tone", "dark spot", "pigment", "dull", "lighten", "fairness", "fair skin", "de-?tan", "tan remov", "spotless", "luminous", "illuminat", "melasma"], "audience": "dull or uneven tone", "why": "{name} fades dullness and evens tone", "expect": "More even tone", "when": "6-8 weeks of daily use"},
+    "hydration": {"label": "Hydrates skin", "domain": "any", "phrases": ["hydrat", "moistur", "plump", "dewy", "quench", "nourish", "dry skin"], "audience": "dry or dehydrated skin", "why": "{name} pulls in and holds water", "expect": "Softer, hydrated feel", "when": "Right after applying"},
+    "oil_control": {"label": "Controls oil and shine", "domain": "skin", "phrases": ["oil[- ]?control", "mattif", "\\bmatte\\b", "shine[- ]control", "sebum", "excess oil", "oil[- ]balanc", "oily skin"], "audience": "oily, shiny skin", "why": "{name} keeps oil in check", "expect": "Less shine", "when": "Within hours of use"},
+    "acne": {"label": "Fights acne and breakouts", "domain": "skin", "phrases": ["acne", "pimple", "breakout", "blemish", "\\bzits?\\b", "spot treatment", "clear skin", "clarif"], "audience": "acne-prone skin", "why": "{name} targets breakouts", "expect": "Fewer breakouts", "when": "4-8 weeks of steady use"},
+    "pores": {"label": "Clears and minimizes pores", "domain": "skin", "phrases": ["\\bpores?\\b", "blackhead", "whitehead", "unclog"], "audience": "clogged pores, blackheads", "why": "{name} clears out pores", "expect": "Clearer pores", "when": "3-6 weeks"},
+    "anti_aging": {"label": "Reduces lines, firms skin", "domain": "skin", "phrases": ["anti-?(aging|ageing)", "wrinkle", "fine line", "\\bfirm", "youth", "elasticity", "\\blift", "collagen", "age[- ]?defy", "age[- ]?rewind", "ageless"], "audience": "early lines, firmness goals", "why": "{name} supports smoother, firmer skin", "expect": "Softer fine lines", "when": "8-12 weeks, minimum"},
+    "exfoliation": {"label": "Exfoliates, smooths texture", "domain": "skin", "phrases": ["exfoliat", "resurfac", "\\bpeel", "texture", "dead skin", "polish", "smooth(er|s|ing)? skin", "renew"], "audience": "rough, bumpy texture", "why": "{name} loosens dead skin", "expect": "Smoother texture", "when": "1-2 weeks"},
+    "soothing": {"label": "Soothes and calms skin", "domain": "any", "phrases": ["sooth", "\\bcalm", "redness", "irritat", "cooling", "comfort", "relie(f|ve)"], "audience": "red, irritated skin", "why": "{name} calms redness", "expect": "Calmer skin", "when": "Within a few days"},
+    "barrier": {"label": "Repairs skin barrier", "domain": "skin", "phrases": ["barrier", "repair", "strengthen", "restor", "replenish"], "audience": "dry, damaged barrier", "why": "{name} rebuilds the protective layer", "expect": "Less tightness", "when": "2-4 weeks"},
+    "cleansing": {"label": "Deep cleans", "domain": "any", "phrases": ["deep[- ]?clean", "\\bcleans", "purif", "removes? (dirt|impurities|makeup|oil)", "detox", "makeup remov", "impurit"], "audience": "daily deep cleansing", "why": "{name} lifts oil and dirt", "expect": "Clean, fresh feel", "when": "First wash"},
+    "sun": {"label": "Protects from sun", "domain": "skin", "phrases": ["\\bspf\\b", "sun ?screen", "sun ?block", "sun ?protect", "\\buv\\b", "\\bpa\\+", "sun ?cream"], "audience": "daily sun protection", "why": "{name} filters UV rays", "expect": "Sunburn protection", "when": "On application, if applied generously"},
+    "uva": {"label": "Broad-spectrum UVA protection", "domain": "skin", "phrases": ["broad[- ]spectrum", "\\buva\\b", "pa\\+\\+", "uva/uvb", "uvb/uva"], "audience": "pigment or tanning concerns", "why": "{name} blocks UVA, the aging rays", "expect": "Less tanning, fewer spots", "when": "With daily use"},
+    "dark_circles": {"label": "Reduces dark circles, puffiness", "domain": "skin", "phrases": ["dark circle", "puff", "under[- ]?eye", "eye bag"], "audience": "puffy, tired-looking eyes", "why": "{name} helps de-puff", "expect": "Less puffiness", "when": "2-4 weeks"},
+    "dandruff": {"label": "Fights dandruff", "domain": "hair", "phrases": ["dandruff", "flak", "itchy scalp", "scalp itch"], "audience": "flaky, itchy scalp", "why": "{name} controls flake-causing yeast", "expect": "Fewer flakes", "when": "2-4 weeks of regular washes"},
+    "hair_fall": {"label": "Reduces hair fall", "domain": "hair", "phrases": ["hair ?fall", "hair ?loss", "hair growth", "regrow", "thicker hair", "anti-?hair ?fall", "grows? hair", "hair density"], "audience": "thinning hair worries", "why": "{name} supports regrowth", "expect": "Less shedding", "when": "3-6 months of steady use"},
+    "hair_smooth": {"label": "Smooths, tames frizz", "domain": "hair", "phrases": ["frizz", "smooth", "silk", "detangl", "glossy", "shiny hair", "hair shine", "manageab", "soft hair"], "audience": "frizzy, tangly hair", "why": "{name} coats hair to cut frizz", "expect": "Smoother hair", "when": "First use"},
+    "hair_repair": {"label": "Repairs damaged hair", "domain": "hair", "phrases": ["damage", "split end", "breakage", "strength", "repair", "\\bbond"], "audience": "damaged, brittle hair", "why": "{name} reinforces weak strands", "expect": "Less breakage", "when": "A few weeks"},
+    "antibacterial": {"label": "Kills germs", "domain": "any", "phrases": ["\\bgerms?\\b", "99\\.9", "anti-?bacterial", "sanitiz", "antiseptic", "kills bacteria"], "audience": "germ protection", "why": "{name} kills germs on contact", "expect": "", "when": ""}
+  },
+
+  "leave_on_tags": ["brightening", "hydration", "acne", "pores", "anti_aging", "exfoliation", "soothing", "barrier", "sun", "uva", "dark_circles", "hair_fall"],
+
+  "free_from": {
+    "paraben_free": {"label": "Paraben-free", "phrases": ["paraben[- ]?free", "no parabens?", "without parabens?", "free (of|from) [a-z, ]*parabens?", "0% parabens?"], "match": "paraben", "noun": "parabens"},
+    "sulfate_free": {"label": "Sulfate-free", "phrases": ["sul(f|ph)ate[- ]?free", "no sul(f|ph)ates?", "sls[- ]?free", "without sul(f|ph)ates?", "free (of|from) [a-z, ]*sul(f|ph)ates?", "0% sul(f|ph)ates?"], "match": "(lauryl|laureth|myreth|trideceth|pareth-\\d+|coco)[- ]sul(f|ph)ate", "noun": "sulfate cleansers"},
+    "silicone_free": {"label": "Silicone-free", "phrases": ["silicone[- ]?free", "no silicones?", "without silicones?", "free (of|from) [a-z, ]*silicones?"], "match": "(methicone|siloxane|silsesquioxane|dimethiconol)", "noun": "silicones"},
+    "fragrance_free": {"label": "Fragrance-free", "phrases": ["fragrance[- ]?free", "unscented", "no (added )?fragrance", "perfume[- ]?free", "without fragrance", "no perfume"], "match": "^(parfum|fragrance|perfume|aroma)$", "soft_flags": ["fragrance_allergen", "essential_oil"], "noun": "fragrance"},
+    "alcohol_free": {"label": "Alcohol-free", "phrases": ["alcohol[- ]?free", "no alcohol", "without alcohol"], "match": "^(alcohol|alcohol denat\\.?|denatured alcohol|ethanol|ethyl alcohol|sd alcohol.*|isopropyl alcohol|isopropanol)$", "noun": "drying alcohol"},
+    "mineral_oil_free": {"label": "Mineral oil-free", "phrases": ["mineral[- ]?oil[- ]?free", "no mineral oil", "paraffin[- ]?free", "without mineral oil"], "match": "mineral oil|paraffinum|paraffin|petrolatum", "noun": "mineral oil"},
+    "oil_free": {"label": "Oil-free", "phrases": ["(?<!mineral )(?<!mineral-)oil[- ]free"], "match": "\\boil$|butter$|mineral oil|paraffinum liquidum|petrolatum", "noun": "oils"},
+    "soap_free": {"label": "Soap-free", "phrases": ["soap[- ]?free", "non[- ]?soap", "no soap"], "match": "^(sodium|potassium) (cocoate|palmate|palm kernelate|tallowate|olivate|castorate)$", "noun": "soap"},
+    "phthalate_free": {"label": "Phthalate-free", "phrases": ["phthalate[- ]?free", "no phthalates?"], "match": "phthalate", "noun": "phthalates"}
+  },
+
+  "special_claims": {
+    "chemical_free": {"label": "Chemical-free", "phrases": ["chemical[- ]?free", "no chemicals", "zero chemicals", "toxin[- ]?free", "free (of|from) (harmful |harsh )?chemicals"]},
+    "natural": {"label": "Natural formula", "phrases": ["\\bnatural\\b", "herbal", "ayurved", "\\borganic\\b", "plant[- ]?based", "botanical"]},
+    "non_comedogenic": {"label": "Won't clog pores", "phrases": ["non[- ]?comedogenic", "(won't|will not|doesn't|does not) clog"]},
+    "gentle": {"label": "Gentle on sensitive skin", "phrases": ["sensitive skin", "\\bgentle\\b", "hypo-?allergenic", "\\bmild\\b", "for all skin types"]}
+  },
+
+  "synthetic_markers": ["^(peg|ppg)-", "methicone$", "siloxane", "paraben", "phenoxyethanol", "carbomer", "acrylate", "polysorbate", "edta", "dmdm", "imidazolidinyl", "diazolidinyl", "isothiazolinone", "^propylene glycol$", "laureth sulfate", "lauryl sulfate", "olefin sulfonate", "triethanolamine", "^ci \\d", "polyacrylamide", "polyquaternium", "ceteareth", "steareth", "mineral oil", "paraffinum", "petrolatum", "^parfum$", "^fragrance$", "chlorphenesin", "triclosan"],
+
+  "flags": {
+    "fragrance": {"flag": "Added fragrance", "why": "{names}: a common trigger for sensitive skin", "avoid": "fragrance-sensitive skin", "strength": "strong"},
+    "fragrance_allergen": {"flag": "Fragrance allergens", "why": "{names}: scent chemicals that can trigger allergies", "avoid": "fragrance allergy", "strength": "soft"},
+    "essential_oil": {"flag": "Essential oils", "why": "{names}: concentrated plant oils that can irritate", "avoid": "very sensitive skin", "strength": "soft"},
+    "photosensitizing": {"flag": "Sun-reactive citrus oil", "why": "{names}: can cause dark patches in sunlight", "avoid": "daytime use without sunscreen", "strength": "strong"},
+    "drying_alcohol": {"flag": "Drying alcohol high up", "why": "{names}: evaporating alcohol that can dry skin", "avoid": "dry or sensitive skin", "strength": "strong", "only_effective": true},
+    "harsh_surfactant": {"flag": "Harsh foaming cleanser", "why": "{names}: strong cleanser that can strip skin", "avoid": "dry or sensitive skin", "strength": "strong", "only_effective": true},
+    "soap": {"flag": "Soap-based cleanser", "why": "{names}: high-pH soap that can leave skin tight", "avoid": "dry or sensitive skin", "strength": "strong"},
+    "comedogenic": {"flag": "Pore-clogging risk", "why": "{names}: rich oil that can clog pores", "avoid": "acne-prone skin", "strength": "soft", "only_effective": true},
+    "formaldehyde_releaser": {"flag": "Formaldehyde-releasing preservative", "why": "{names}: releases traces of formaldehyde, a known allergen", "avoid": "allergy-prone skin", "strength": "strong"},
+    "isothiazolinone": {"flag": "High-allergy preservative", "why": "{names}: preservative with high allergy rates", "avoid": "allergy-prone skin", "strength": "strong"},
+    "retinoid": {"flag": "Vitamin A (retinoid)", "why": "{names}: can irritate; often avoided in pregnancy", "avoid": "pregnant or breastfeeding", "strength": "soft"},
+    "acid_exfoliant": {"flag": "Exfoliating acids", "why": "{names}: can sting and raise sun sensitivity", "avoid": "very sensitive skin", "strength": "soft", "only_effective": true},
+    "cooling": {"flag": "Cooling agents", "why": "{names}: tingling agents that can irritate", "avoid": "sensitive skin", "strength": "soft"},
+    "benzoyl_peroxide": {"flag": "Benzoyl peroxide", "why": "Dries skin; bleaches towels and clothes", "avoid": "dry or sensitive skin", "strength": "soft"},
+    "restricted": {"flag": "Restricted ingredient", "why": "{names}: banned or restricted in EU cosmetics", "avoid": "safety-conscious shoppers", "strength": "strong"},
+    "oxybenzone": {"flag": "Oxybenzone UV filter", "why": "Can trigger skin allergies; the EU caps its level", "avoid": "allergy-prone skin", "strength": "soft"}
+  },
+
+  "product_types": [
+    ["micellar water", "skin", true], ["face wash", "skin", true], ["facewash", "skin", true], ["cleansing gel", "skin", true], ["cleansing foam", "skin", true],
+    ["foaming cleanser", "skin", true], ["cleanser", "skin", true], ["body wash", "skin", true], ["shower gel", "skin", true], ["soap", "skin", true],
+    ["scrub", "skin", true], ["clay mask", "skin", true], ["peel-off mask", "skin", true], ["sheet mask", "skin", false], ["sleeping mask", "skin", false], ["face mask", "skin", true], ["face pack", "skin", true], ["ubtan", "skin", true],
+    ["anti-dandruff shampoo", "hair", true], ["shampoo", "hair", true], ["conditioner", "hair", true], ["hair mask", "hair", true], ["hair oil", "hair", false], ["hair serum", "hair", false], ["hair tonic", "hair", false],
+    ["sunscreen", "skin", false], ["sun screen", "skin", false], ["sunblock", "skin", false], ["sun cream", "skin", false], ["sun stick", "skin", false],
+    ["eye cream", "skin", false], ["night cream", "skin", false], ["day cream", "skin", false], ["face cream", "skin", false], ["body lotion", "skin", false], ["body butter", "skin", false],
+    ["moisturizer", "skin", false], ["moisturiser", "skin", false], ["serum", "skin", false], ["essence", "skin", false], ["ampoule", "skin", false], ["toner", "skin", false],
+    ["face oil", "skin", false], ["face mist", "skin", false], ["lip balm", "skin", false], ["gel", "skin", false], ["lotion", "skin", false], ["cream", "skin", false], ["balm", "skin", false]
+  ]
+}

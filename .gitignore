@@ -3,3 +3,5 @@ backend/venv/
 backend/__pycache__/
 backend/*.pyc
 backend/.env
+backend/data/unknown_ingredients.json
+backend/data/raw/

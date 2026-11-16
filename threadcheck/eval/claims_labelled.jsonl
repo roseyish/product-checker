@@ -1,0 +1,40 @@
+{"id": "c01", "brand": "Northloom", "claim": "Our outerwear is made with 100% recycled polyester.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c02", "brand": "Northloom", "claim": "62% of the polyester in our outerwear range is GRS-certified recycled polyester.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c03", "brand": "Northloom", "claim": "Northloom is a carbon neutral brand.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c04", "brand": "Northloom", "claim": "Our headquarters and owned warehouses are carbon neutral for scope 1 and 2 emissions.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c05", "brand": "Northloom", "claim": "Every Northloom cotton garment contains Better Cotton.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c06", "brand": "Northloom", "claim": "Our organic cotton T-shirts are GOTS certified.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c07", "brand": "Northloom", "claim": "All of our cotton is organic.", "label": "unsupported", "evidence_source": "northloom-report-2025"}
+{"id": "c08", "brand": "Northloom", "claim": "We have cut water use in our denim by 22%.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c09", "brand": "Northloom", "claim": "Water consumption per pair of jeans at our two largest denim suppliers fell 22% between FY2022 and FY2025.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c10", "brand": "Northloom", "claim": "Garments returned through our take-back programme are recycled into new Northloom clothing.", "label": "unsupported", "evidence_source": "northloom-report-2025"}
+{"id": "c11", "brand": "Northloom", "claim": "We collected 18,200 garments through our take-back programme in FY2025.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c12", "brand": "Northloom", "claim": "All of our packaging is 100% recycled.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c13", "brand": "Northloom", "claim": "Our e-commerce mailer bags are made from 100% post-consumer recycled plastic.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c14", "brand": "Northloom", "claim": "Northloom has a science-based target covering our full value chain.", "label": "unsupported", "evidence_source": "northloom-report-2025"}
+{"id": "c15", "brand": "Northloom", "claim": "Our denim is produced in bluesign certified facilities.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c16", "brand": "Northloom", "claim": "Northloom is an eco-friendly brand.", "label": "unsupported", "evidence_source": "northloom-report-2025"}
+{"id": "c17", "brand": "Northloom", "claim": "Recycled polyester made up 41% of total polyester purchased by weight.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c18", "brand": "Northloom", "claim": "We reduced scope 1 and 2 emissions by 31% against a FY2019 baseline.", "label": "supported", "evidence_source": "northloom-report-2025"}
+{"id": "c19", "brand": "Northloom", "claim": "Northloom has reduced its total emissions by 31%.", "label": "misleading", "evidence_source": "northloom-report-2025"}
+{"id": "c20", "brand": "Northloom", "claim": "Northloom uses no virgin plastic in its products.", "label": "unsupported", "evidence_source": "northloom-report-2025"}
+{"id": "c21", "brand": "Veridian", "claim": "100% of our wool is Responsible Wool Standard certified.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c22", "brand": "Veridian", "claim": "Veridian garments are 100% made from recycled materials.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c23", "brand": "Veridian", "claim": "Our ReLoop collection is made from 100% recycled nylon from fishing nets.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c24", "brand": "Veridian", "claim": "Veridian is a carbon neutral company.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c25", "brand": "Veridian", "claim": "We have committed to halve our emissions across scopes 1, 2 and 3 by 2030 from a 2022 baseline.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c26", "brand": "Veridian", "claim": "Veridian has already halved its emissions.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c27", "brand": "Veridian", "claim": "Every worker in our supply chain is paid a living wage.", "label": "misleading", "evidence_source": "veridian-report-2025"}
+{"id": "c28", "brand": "Veridian", "claim": "All 41 of our tier 1 factories were audited in 2025.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c29", "brand": "Veridian", "claim": "Our products are OEKO-TEX certified.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c30", "brand": "Veridian", "claim": "Recycled content across our collection reached 28% by weight in 2025.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c31", "brand": "Veridian", "claim": "Veridian's recycled content is up from 19% in 2023 to 28% in 2025.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c32", "brand": "Veridian", "claim": "Veridian is a sustainable and conscious brand.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c33", "brand": "Veridian", "claim": "Veridian offsets all of its emissions.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c34", "brand": "Veridian", "claim": "Our suppliers must comply with a Restricted Substances List tested annually.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c35", "brand": "Veridian", "claim": "78% of tier 1 workers are paid at or above a living wage benchmark.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c36", "brand": "Veridian", "claim": "Veridian is a bluesign system partner.", "label": "unsupported", "evidence_source": "veridian-report-2025"}
+{"id": "c37", "brand": "Veridian", "claim": "Wool made up 34% of our total fibre volume in 2025.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c38", "brand": "Veridian", "claim": "Total emissions in 2025 were 4% below our 2022 baseline.", "label": "supported", "evidence_source": "veridian-report-2025"}
+{"id": "c39", "brand": "Veridian", "claim": "Our entire collection is made from ocean plastic.", "label": "misleading", "evidence_source": "veridian-report-2025"}
+{"id": "c40", "brand": "Veridian", "claim": "Veridian's products are climate positive.", "label": "unsupported", "evidence_source": "veridian-report-2025"}

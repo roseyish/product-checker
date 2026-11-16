@@ -65,11 +65,15 @@ async function handleAutoAnalyze({ url, ingredients, claims, force }, tabId) {
   await chrome.storage.session.set({ [key]: { status: "loading" } });
   setBadge(tabId, "...", "#D38C9D");
 
+  // Never leave the panel spinning: give up if the backend hasn't answered in time.
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 180000);
   try {
     const res = await fetch(BACKEND_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ingredients: ingredients || "", claims: claims || "" })
+      body: JSON.stringify({ ingredients: ingredients || "", claims: claims || "" }),
+      signal: controller.signal
     });
     const data = await res.json();
     if (data.error) throw new Error(data.error);
@@ -78,7 +82,12 @@ async function handleAutoAnalyze({ url, ingredients, claims, force }, tabId) {
     const score = Math.max(0, Math.min(100, Number(data.truth_score) || 0));
     setBadge(tabId, String(score), TIER_COLORS[tierFor(score)]);
   } catch (err) {
-    await chrome.storage.session.set({ [key]: { status: "error", message: err.message } });
+    const message = err.name === "AbortError"
+      ? "The analysis took too long. Please try again."
+      : err.message;
+    await chrome.storage.session.set({ [key]: { status: "error", message } });
     setBadge(tabId, "!", "#A55166");
+  } finally {
+    clearTimeout(timer);
   }
 }
